@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    background: linear-gradient(to right, rgb(0, 0, 42), rgb(0, 0, 93) , rgb(0, 0, 139),rgb(2, 2, 189), rgb(0,0,139),rgb(0, 0, 93) ,rgb(0, 0, 42));
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 60px;
+    background:none;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: white;
+}
+
+form{
+    margin-top: 25px;
+    font-size: xx-large;
+}
+
+label{
+    margin: 25px;
+}
+button{
+    height: 38px;
+    width: 78px;
+    font-size: large;
+    border-radius: 7px;
+}
+
+input{
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 7px;
+}
+
+#signupBox{
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh;
+    border: ridge 4px rgb(252, 254, 255) ;
+    padding: 10px;
+    background-color: rgba(91, 135, 135, 0.499);
+    
+}

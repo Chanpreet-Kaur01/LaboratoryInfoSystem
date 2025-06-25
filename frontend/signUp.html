@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>signUp!</title>
+</head>
+<body>
+    
+    <div id="signupBox">
+        <h3>SignUp</h3>
+        <br>
+        <form action="">
+            <label for="userName">UserName:
+                <input type="text" id="userName" name="userName" required  placeholder="abc#123">
+            </label>
+            <br>
+            <br>
+            <label for="email">email:
+                <input type="email" id="Email" name="Email" required placeholder="abc@xyz.com">
+            </label>
+            <br>
+            <br>
+            <label for="password">Password:
+                <input type="password"id="passWord" name="passWord" required minlength="8" maxlength="15" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[- = + _ ; : ' . | * $ # @ ! ~]) . {8,15}">
+            </label>
+            <br>
+            <br>
+            <label for="confirmpwd">Confirm Password:
+                <input type="password" required id="pwdConfirm" name="pwdConfirm">
+            </label>
+            <br>
+            <br>
+            <button id="signup" class="buttons-class">SignUp</button>
+        </form>
+    </div>
+</body>
+</html>
