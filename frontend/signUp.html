@@ -11,19 +11,19 @@
     <div id="signupBox">
         <h3>SignUp</h3>
         <br>
-        <form action="">
+        <form id="SignUpForm">
             <label for="userName">UserName:
                 <input type="text" id="userName" name="userName" required  placeholder="abc#123">
             </label>
             <br>
             <br>
             <label for="email">email:
-                <input type="email" id="Email" name="Email" required placeholder="abc@xyz.com">
+                <input type="text" id="Email" name="Email" required placeholder="abc@xyz.com">
             </label>
             <br>
             <br>
             <label for="password">Password:
-                <input type="password"id="passWord" name="passWord" required minlength="8" maxlength="15" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[- = + _ ; : ' . | * $ # @ ! ~]) . {8,15}">
+                <input type="password"id="passWord" name="passWord" required minlength="8" maxlength="15" >
             </label>
             <br>
             <br>
@@ -32,8 +32,34 @@
             </label>
             <br>
             <br>
+            <div id="PasswordValidationNConfirmpwdMatching">
+                
+                <div id="ConfirmpwdMatching" style="visibility: hidden;">
+                    <p>Please fill same password in confirmPassword Field!</p>
+                </div>
+                <div id="passwordValidation">
+                    <div id="leftHalf">
+                    <p id="listHeading">The password must contain:</p>
+                    <p id="smallLetter">at least one small letter</p>
+                    <p id="capLetter">at least one capital letter</p>
+                    </div>
+                    <div id="rightHalf">
+                    <p id="splChar">at least one special character</p>
+                    <p id="digit">at least one digit</p>
+                    <p id="length">at least 8 characters</p>
+                    </div>
+                </div>
+                
+            </div>
+            <br>
             <button id="signup" class="buttons-class">SignUp</button>
         </form>
+        
     </div>
+    
+    <script type="module" src="/backend/routes/userRoutes.js"></script>
+    <script type="module" src="/backend/Server/server.js"></script>
+    <script type="module" src="/frontend/signup.js"></script>
+
 </body>
 </html>

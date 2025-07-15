@@ -1,0 +1,29 @@
+{
+  "name": "laboratoryinfosystem",
+  "version": "1.0.0",
+  "description": "This is a project which I am making to learn web dev.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chanpreet-Kaur01/LaboratoryInfoSystem.git"
+  },
+  "author": "Chanpreet Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chanpreet-Kaur01/LaboratoryInfoSystem/issues"
+  },
+  "homepage": "https://github.com/Chanpreet-Kaur01/LaboratoryInfoSystem#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0",
+    "nodemon": "^3.1.10"
+  }
+}
