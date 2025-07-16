@@ -62,11 +62,11 @@ signUpButton.addEventListener('click',(e)=>{
         headers:{
         'content-type':'application/json',
         },
-        body:JSON.stringify(dataObject),
+        body:JSON.stringify(dataObject)
     }).then((response)=>{
         console.log('response recieved');
-        return response.json()})
-    .then((data)=>{
+        return response.json()
+    }).then((data)=>{
         console.log('response saved:');
         alert('(' + data.status + ') ' + data.message);
         if (data.message==='User Signed up successfully!'||data.message==='User already exists.')

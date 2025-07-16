@@ -4,6 +4,15 @@ import bcrypt from "bcrypt";
 export const signup = async (req,res)=>{
     try{
         const {userName ,Email ,passWord}=req.body;
+
+        if (!userName||!Email||!passWord){
+            return res.status(400).json({
+                success:false,
+                status:400,
+                message:'Kindly fill in complete details!'
+            });
+        }
+
         const passwordRegex=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[^a-zA_Z0-9])(?=.*\d).*$/;
         const minLength=8;
         if(!passwordRegex.test(passWord)||passWord.length<minLength){
@@ -55,6 +64,7 @@ export const login = async (req,res)=>{
         if(!userName||!passWord){
             return res.status(400).json({
                 success:false,
+                status:400,
                 message:'Please, fill in complete details.'
             });
         }
@@ -62,18 +72,21 @@ export const login = async (req,res)=>{
         if (!validateUser){
             return res.status(404).json({
                 success:false,
+                status:404,
                 message:'User is not registered with us, Kindly signUp first.'
             });
         }
         if(await bcrypt.compare(passWord , validateUser.passWord)){
             return res.status(200).json({
                 success:true,
+                status:200,
                 message:'Login Successful!'
             });
         }
         else{
             return res.status(400).json({
                 success:false,
+                status:400,
                 message:'Incorrect Password!'
             })
         }
@@ -82,6 +95,7 @@ export const login = async (req,res)=>{
         console.log(error);
         res.status(500).json({
             success:false,
+            status:500,
             message:'internal server error.'
         });
     }
