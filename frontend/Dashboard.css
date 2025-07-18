@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(52, 52, 90),rgb(107, 107, 212),rgb(171, 171, 248),rgb(107, 107, 212),rgb(52, 52, 90),rgb(0,0,0)) ;
+    margin: 0;
+    padding: 0;
+}
+#topRibbon{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 10vh;
+    background: white;
+    position: static;
+}
+
+#logo{
+    width: 18vh;
+}
+
+#setupIcon,#userMenuIcon{
+    height: 7vh;
+    width: 7vh;
+}
+
+#setupButton,#userMenuButton{
+    margin: 15px;
+    padding: 0px;
+    border: 0px;
+    background: white;
+}
+
+#search{
+    height: 5vh;
+    width: 65vw;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0.3vw ; 
+    margin-top: 1.3vw;
+    font-size: larger;
+}
+
+#setupButton{
+    margin-left: 13vw;
+}
