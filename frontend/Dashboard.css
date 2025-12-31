@@ -8,6 +8,7 @@ body{
     flex-wrap: nowrap;
     flex-direction: row;
     height: 10vh;
+    width: 100vw;
     background: white;
     position: static;
 }
@@ -41,4 +42,18 @@ body{
 
 #setupButton{
     margin-left: 13vw;
+}
+
+#dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#sideMenu{
+    height: 90vh;
+    width: 15vw;
+    position: static;
+    background: white;
+
 }

@@ -1,4 +1,4 @@
-import user from "../User/userSchema.js";
+import user from "../Model/userSchema.js";
 import bcrypt from "bcrypt";
 
 export const signup = async (req,res)=>{
@@ -13,7 +13,7 @@ export const signup = async (req,res)=>{
             });
         }
 
-        const passwordRegex=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[^a-zA_Z0-9])(?=.*\d).*$/;
+        const passwordRegex=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[^a-zA-Z0-9])(?=.*\d).*$/;
         const minLength=8;
         if(!passwordRegex.test(passWord)||passWord.length<minLength){
             return res.status(400).json({

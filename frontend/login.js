@@ -21,6 +21,9 @@ loginButton.addEventListener('click',(e)=>{
         if(data.message=='User is not registered with us, Kindly signUp first.'){
             window.location.href='http://127.0.0.1:5500/frontend/signUp.html';
         }
+        if(data.message=='Login Successful!'){
+            window.location.href='http://127.0.0.1:5500/frontend/Dashboard.html';
+        }
     }).catch((error)=>{
         console.error(error);
     });
